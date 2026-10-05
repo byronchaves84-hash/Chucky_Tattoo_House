@@ -1,0 +1,1718 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08080b">
+<meta name="description" content="Portafolio de tatuajes de Tattoo Chucky House. Blackwork, Anime, Realismo y más.">
+
+<title>Portafolio | Tattoo Chucky House</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #08080b;
+    --panel: #111016;
+    --white: #f7f4fa;
+    --muted: #a29aaa;
+    --purple: #c000ff;
+    --pink: #f000df;
+    --border: rgba(192, 0, 255, .24);
+    --heading: "Barlow Condensed", sans-serif;
+    --body: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--white);
+    font-family: var(--body);
+    overflow-x: clip;
+}
+
+body, button, input, select, textarea {
+    font-family: var(--body);
+}
+
+button, a, input, select, textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    color: inherit;
+    cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--pink);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: var(--purple);
+    color: white;
+}
+
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    min-height: 78px;
+    padding: 12px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(8, 8, 11, .94);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(18px);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.logo-small {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: var(--pink);
+}
+
+.logo-main {
+    margin-top: 5px;
+    font-family: var(--heading);
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: -.8px;
+    white-space: nowrap;
+}
+
+.logo-main span {
+    color: var(--purple);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav a {
+    font-family: var(--heading);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: color .2s;
+}
+
+.nav a:hover,
+.nav .active {
+    color: var(--pink);
+}
+
+.nav .nav-button {
+    padding: 11px 18px;
+    border: 1px solid var(--purple);
+    color: var(--pink);
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    padding: 65px 8%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+    background:
+        radial-gradient(ellipse at 80% 45%, rgba(155, 0, 255, .22), transparent 45%),
+        radial-gradient(ellipse at 100% 100%, rgba(255, 0, 80, .13), transparent 35%),
+        #0b0a10;
+}
+
+.hero::before {
+    content: "CH";
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--heading);
+    font-size: clamp(220px, 35vw, 460px);
+    line-height: .8;
+    font-weight: 900;
+    color: rgba(255, 255, 255, .025);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+    animation: rise .7s ease both;
+}
+
+.eyebrow,
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--pink);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background: var(--pink);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--pink);
+}
+
+.hero h1 {
+    margin-top: 23px;
+    font-family: var(--heading);
+    font-size: clamp(66px, 10vw, 125px);
+    font-weight: 900;
+    line-height: .85;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.hero p {
+    max-width: 490px;
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    color: #d5c7df;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-bottom span:first-child {
+    color: var(--pink);
+}
+
+.hero-line {
+    width: 38px;
+    height: 1px;
+    background: var(--purple);
+}
+
+/* CONTENIDO */
+
+main {
+    width: 100%;
+}
+
+.portfolio-section {
+    padding: 65px 6% 90px;
+}
+
+.section-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.section-label {
+    color: var(--muted);
+}
+
+.section-label span {
+    color: var(--pink);
+}
+
+.section-top h2 {
+    margin-top: 15px;
+    font-family: var(--heading);
+    font-size: clamp(40px, 6vw, 65px);
+    line-height: 1;
+    font-weight: 900;
+}
+
+.section-top h2 span {
+    color: var(--purple);
+}
+
+.counter {
+    padding: 13px 18px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.counter strong {
+    display: block;
+    color: var(--pink);
+    font-family: var(--heading);
+    font-size: 30px;
+    line-height: 1;
+}
+
+.counter span {
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* BARRA DE HERRAMIENTAS */
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: transparent;
+    color: #aaa3b2;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: var(--purple);
+    background: rgba(192,0,255,.12);
+    color: white;
+    box-shadow: inset 0 -2px var(--purple);
+}
+
+.toolbar-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-box {
+    width: 180px;
+    padding: 11px 13px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: #100f15;
+    color: white;
+    font-size: 12px;
+}
+
+.search-box::placeholder {
+    color: #81798b;
+}
+
+.add-button,
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 17px;
+    border: 1px solid var(--purple);
+    background: linear-gradient(110deg, #9800dc, #df00ce);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: .25s;
+}
+
+.add-button:hover,
+.primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(192,0,255,.3);
+}
+
+/* GALERÍA */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.work-card {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    animation: rise .45s ease both;
+}
+
+.work-image {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 50% 35%, rgba(192,0,255,.12), transparent 55%),
+        #111016;
+    cursor: zoom-in;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .6s ease, filter .4s ease;
+}
+
+.work-card:hover .work-image img {
+    transform: scale(1.055);
+    filter: saturate(1.12);
+}
+
+.work-number {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    padding: 7px 10px;
+    background: rgba(8,8,11,.8);
+    border: 1px solid var(--border);
+    color: #e7c4ff;
+    font-family: var(--heading);
+    font-size: 13px;
+    letter-spacing: 1px;
+    backdrop-filter: blur(8px);
+}
+
+.work-category {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    max-width: 65%;
+    padding: 7px 9px;
+    background: rgba(120,0,160,.82);
+    color: white;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.work-info {
+    padding: 18px;
+}
+
+.work-info h3 {
+    font-family: var(--heading);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+
+.work-info p {
+    min-height: 38px;
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.work-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 17px;
+    padding-top: 13px;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.work-footer span {
+    color: #bda4d0;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.work-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.small-action {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255,255,255,.13);
+    background: transparent;
+    color: #e4d9ed;
+    font-size: 15px;
+}
+
+.small-action:hover {
+    border-color: var(--purple);
+    color: var(--pink);
+}
+
+.small-action.delete:hover {
+    border-color: #ff345b;
+    color: #ff345b;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 65px 20px;
+    text-align: center;
+    border: 1px dashed var(--border);
+    background: rgba(255,255,255,.015);
+}
+
+.empty-state .empty-icon {
+    margin-bottom: 15px;
+    color: var(--purple);
+    font-size: 42px;
+}
+
+.empty-state h3 {
+    font-family: var(--heading);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.empty-state p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* MENSAJE INFERIOR */
+
+.bottom-banner {
+    position: relative;
+    margin-top: 65px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border: 1px solid var(--border);
+    background:
+        radial-gradient(ellipse at 90% 50%, rgba(192,0,255,.13), transparent 55%),
+        #100e15;
+}
+
+.bottom-banner h3 {
+    font-family: var(--heading);
+    font-size: clamp(26px, 4vw, 42px);
+    line-height: 1;
+}
+
+.bottom-banner h3 span {
+    color: var(--pink);
+}
+
+.bottom-banner p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 28px 6%;
+    background: #060608;
+    border-top: 1px solid var(--border);
+}
+
+.footer p {
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer a:last-child {
+    color: var(--pink);
+    font-family: var(--heading);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* MODALES */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgba(0,0,0,.82);
+    backdrop-filter: blur(12px);
+    overflow-y: auto;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-box {
+    position: relative;
+    width: 100%;
+    max-width: 570px;
+    max-height: 92dvh;
+    overflow-y: auto;
+    padding: 30px;
+    background: #100e15;
+    border: 1px solid rgba(192,0,255,.5);
+    box-shadow: 0 0 70px rgba(100,0,160,.15);
+    animation: rise .25s ease both;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.modal-header h2 {
+    margin-top: 10px;
+    font-family: var(--heading);
+    font-size: 38px;
+    line-height: 1;
+}
+
+.modal-header h2 span {
+    color: var(--pink);
+}
+
+.close-button {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    background: transparent;
+    font-size: 23px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d8ccdf;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-height: 45px;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 0;
+    background: #09080d;
+    color: white;
+    font-size: 12px;
+}
+
+.form-group textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    height: auto;
+    padding: 12px;
+}
+
+.form-group input[type="file"]::file-selector-button {
+    margin-right: 10px;
+    padding: 8px;
+    border: 0;
+    background: #32113e;
+    color: white;
+    cursor: pointer;
+}
+
+.form-hint {
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.image-preview {
+    display: none;
+    width: 100%;
+    max-height: 220px;
+    margin-top: 12px;
+    object-fit: contain;
+    background: #08080b;
+    border: 1px solid var(--border);
+}
+
+.image-preview.visible {
+    display: block;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.form-buttons button {
+    flex: 1;
+}
+
+.cancel-button {
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,.16);
+    background: transparent;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.storage-warning {
+    margin-top: 17px;
+    padding: 12px;
+    border-left: 2px solid var(--purple);
+    background: rgba(192,0,255,.07);
+    color: #c8bdcf;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+/* VISOR DE FOTOGRAFÍAS */
+
+.viewer {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0,0,0,.94);
+}
+
+.viewer.open {
+    display: flex;
+}
+
+.viewer-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.viewer img {
+    display: block;
+    max-width: min(900px, 88vw);
+    max-height: 78dvh;
+    object-fit: contain;
+    margin: auto;
+}
+
+.viewer h3 {
+    margin-top: 15px;
+    font-family: var(--heading);
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.viewer p {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.viewer-close {
+    position: fixed;
+    top: 18px;
+    right: 22px;
+    width: 43px;
+    height: 43px;
+    border: 1px solid var(--border);
+    background: #100e15;
+    font-size: 27px;
+}
+
+/* ANIMACIONES */
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+    .header {
+        padding-inline: 4%;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .portfolio-section {
+        padding-inline: 5%;
+    }
+
+    .work-info {
+        padding: 14px;
+    }
+}
+
+/* MÓVILES */
+
+@media (max-width: 620px) {
+    html {
+        scroll-padding-top: 75px;
+    }
+
+    .header {
+        min-height: 70px;
+        padding: 10px 5%;
+    }
+
+    .logo-main {
+        font-size: 25px;
+    }
+
+    .nav {
+        gap: 11px;
+    }
+
+    .nav a:not(.active) {
+        display: none;
+    }
+
+    .nav .nav-button {
+        display: block;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 330px;
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: clamp(60px, 12vw, 82px);
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .portfolio-section {
+        padding: 48px 4% 65px;
+    }
+
+    .section-top {
+        align-items: flex-end;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .section-top h2 {
+        font-size: clamp(36px, 8vw, 49px);
+    }
+
+    .section-label {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .counter {
+        padding: 10px;
+    }
+
+    .counter strong {
+        font-size: 25px;
+    }
+
+    .counter span {
+        font-size: 7px;
+    }
+
+    .toolbar {
+        align-items: stretch;
+        gap: 13px;
+        padding: 15px 0;
+    }
+
+    .filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        scrollbar-width: thin;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+        padding: 10px 12px;
+        font-size: 9px;
+    }
+
+    .toolbar-actions {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .add-button {
+        padding: 12px;
+        font-size: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .work-image {
+        aspect-ratio: 3 / 4;
+    }
+
+    .work-number {
+        top: 7px;
+        left: 7px;
+        padding: 5px 7px;
+        font-size: 10px;
+    }
+
+    .work-category {
+        top: 7px;
+        right: 7px;
+        padding: 5px 6px;
+        font-size: 7px;
+        letter-spacing: .5px;
+    }
+
+    .work-info {
+        padding: 11px 9px;
+    }
+
+    .work-info h3 {
+        font-size: clamp(18px, 5vw, 24px);
+    }
+
+    .work-info p {
+        min-height: 48px;
+        font-size: 10px;
+    }
+
+    .work-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .work-actions {
+        width: 100%;
+    }
+
+    .small-action {
+        flex: 1;
+    }
+
+    .bottom-banner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 24px 18px;
+        margin-top: 40px;
+    }
+
+    .bottom-banner .primary-button {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 25px 5%;
+    }
+
+    .footer p {
+        width: 100%;
+        order: 3;
+    }
+
+    .modal {
+        padding: 10px;
+    }
+
+    .modal-box {
+        padding: 21px 16px;
+        max-height: 94dvh;
+    }
+
+    .modal-header h2 {
+        font-size: 32px;
+    }
+
+    .viewer img {
+        max-width: 94vw;
+        max-height: 72dvh;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo-main {
+        font-size: 21px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .work-image {
+        aspect-ratio: 4 / 5;
+    }
+
+    .work-info h3 {
+        font-size: 25px;
+    }
+
+    .work-info p {
+        min-height: 0;
+    }
+
+    .work-footer {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html" aria-label="Volver a Tattoo Chucky House">
+        <span class="logo-small">TATTOO</span>
+        <span class="logo-main">CHUCKY<span>HOUSE</span></span>
+    </a>
+
+    <nav class="nav">
+        <a href="index.html">INICIO</a>
+        <a href="#galeria" class="active">PORTAFOLIO</a>
+        <a href="#galeria" class="nav-button">VER TRABAJOS ↗</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="eyebrow">
+            <span class="dot"></span>
+            TATTOO CHUCKY HOUSE
+        </div>
+
+        <h1>NUESTRO<br><span>PORTAFOLIO.</span></h1>
+
+        <p>
+            Cada línea tiene una intención. Cada diseño cuenta una historia.
+            Explora nuestros trabajos y encuentra inspiración para tu próximo tatuaje.
+        </p>
+
+        <div class="hero-bottom">
+            <span>ARTE ORIGINAL</span>
+            <span class="hero-line"></span>
+            <span>HECHO EN LA PIEL</span>
+        </div>
+    </div>
+</section>
+
+<main>
+<section class="portfolio-section" id="galeria">
+
+    <div class="section-top">
+        <div>
+            <div class="section-label"><span>01</span> — GALERÍA DE TRABAJOS</div>
+            <h2>PIEZAS QUE<br><span>HABLAN POR SÍ SOLAS.</span></h2>
+        </div>
+
+        <div class="counter">
+            <strong id="workCount">0</strong>
+            <span>TRABAJOS</span>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="Todos">TODOS</button>
+            <button class="filter-btn" data-filter="Blackwork">BLACKWORK</button>
+            <button class="filter-btn" data-filter="Anime">ANIME</button>
+            <button class="filter-btn" data-filter="Realismo">REALISMO</button>
+            <button class="filter-btn" data-filter="Lettering">LETTERING</button>
+            <button class="filter-btn" data-filter="Otros">OTROS</button>
+        </div>
+
+        <div class="toolbar-actions">
+            <input
+                class="search-box"
+                type="search"
+                id="searchInput"
+                placeholder="Buscar trabajo..."
+                aria-label="Buscar tatuajes"
+            >
+
+            <button class="add-button" id="openForm">
+                <span>＋</span> AGREGAR TRABAJO
+            </button>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery" aria-live="polite"></div>
+
+    <div class="bottom-banner">
+        <div>
+            <h3>EL SIGUIENTE DISEÑO<br><span>PUEDE SER EL TUYO.</span></h3>
+            <p>¿Tienes una idea? Hablemos y hagámosla realidad.</p>
+        </div>
+
+        <a
+            class="primary-button"
+            href="https://wa.me/506XXXXXXXX?text=Hola%20Chucky%20House%2C%20quiero%20consultar%20por%20un%20tatuaje."
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            CONSULTAR POR WHATSAPP ↗
+        </a>
+    </div>
+
+</section>
+</main>
+
+<footer class="footer">
+    <a class="logo" href="index.html">
+        <span class="logo-small">TATTOO</span>
+        <span class="logo-main">CHUCKY<span>HOUSE</span></span>
+    </a>
+
+    <p>ARTE QUE SE LLEVA EN LA PIEL.</p>
+
+    <a href="#galeria">VOLVER ARRIBA ↑</a>
+</footer>
+
+<!-- FORMULARIO PARA AÑADIR O EDITAR TRABAJOS -->
+
+<div class="modal" id="formModal" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div>
+                <div class="section-label"><span>CH</span> — ESTUDIO CREATIVO</div>
+                <h2 id="formTitle">NUEVO <span>TRABAJO.</span></h2>
+            </div>
+            <button class="close-button" id="closeForm" aria-label="Cerrar">×</button>
+        </div>
+
+        <form id="workForm">
+            <div class="form-group">
+                <label for="workTitle">NOMBRE DEL TATUAJE *</label>
+                <input
+                    type="text"
+                    id="workTitle"
+                    maxlength="70"
+                    placeholder="Ej. Oni japonés"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="workCategory">ESTILO *</label>
+                <select id="workCategory" required>
+                    <option value="Blackwork">Blackwork</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Realismo">Realismo</option>
+                    <option value="Lettering">Lettering</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="workDescription">DESCRIPCIÓN</label>
+                <textarea
+                    id="workDescription"
+                    maxlength="300"
+                    placeholder="Cuenta algo sobre el diseño, la técnica o su inspiración..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="workImage">FOTOGRAFÍA DEL TRABAJO *</label>
+                <input
+                    type="file"
+                    id="workImage"
+                    accept="image/jpeg,image/png,image/webp"
+                    required
+                >
+                <p class="form-hint">
+                    Formatos JPG, PNG o WebP. Se recomienda una imagen optimizada
+                    de menos de 1 MB para facilitar el guardado.
+                </p>
+                <img class="image-preview" id="imagePreview" alt="Vista previa de la fotografía">
+            </div>
+
+            <div class="form-buttons">
+                <button type="button" class="cancel-button" id="cancelForm">CANCELAR</button>
+                <button type="submit" class="primary-button" id="saveButton">GUARDAR TRABAJO ↗</button>
+            </div>
+        </form>
+
+        <div class="storage-warning">
+            IMPORTANTE: esta versión guarda los trabajos en este navegador.
+            No los publica en un servidor ni los comparte automáticamente con otros dispositivos.
+            Para un portafolio compartido por todos los clientes y administradores se necesita
+            conectar la página a una base de datos y almacenamiento de imágenes.
+        </div>
+    </div>
+</div>
+
+<!-- VISOR DE IMÁGENES -->
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+    <button class="viewer-close" id="closeViewer" aria-label="Cerrar fotografía">×</button>
+
+    <div class="viewer-content">
+        <img id="viewerImage" alt="">
+        <h3 id="viewerTitle"></h3>
+        <p id="viewerDescription"></p>
+    </div>
+</div>
+
+<script>
+"use strict";
+
+/*
+ * PORTAFOLIO LOCAL
+ * Los trabajos se guardan en localStorage.
+ * No constituye un sistema multiusuario ni una base de datos online.
+ */
+
+const STORAGE_KEY = "chucky_house_portfolio_v1";
+
+const gallery = document.getElementById("gallery");
+const workCount = document.getElementById("workCount");
+const formModal = document.getElementById("formModal");
+const workForm = document.getElementById("workForm");
+const imageInput = document.getElementById("workImage");
+const imagePreview = document.getElementById("imagePreview");
+const saveButton = document.getElementById("saveButton");
+const searchInput = document.getElementById("searchInput");
+
+let works = [];
+let activeFilter = "Todos";
+let editingId = null;
+let selectedImage = "";
+let pendingFileRead = 0;
+
+const initialWorks = [
+    {
+        id: "demo-1",
+        title: "Arte en tinta",
+        category: "Blackwork",
+        description: "Una pieza de inspiración oscura. Sustituye esta demostración por un trabajo real.",
+        image: "https://images.unsplash.com/photo-1598373182133-52452f7691ef?auto=format&fit=crop&w=800&q=80",
+        demo: true
+    },
+    {
+        id: "demo-2",
+        title: "Expresión artística",
+        category: "Anime",
+        description: "Diseño de muestra para la galería. Añade tus propias fotografías cuando quieras.",
+        image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=800&q=80",
+        demo: true
+    },
+    {
+        id: "demo-3",
+        title: "Detalles y sombras",
+        category: "Realismo",
+        description: "Ejemplo visual de la colección. Los trabajos reales pueden incluir su descripción.",
+        image: "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?auto=format&fit=crop&w=800&q=80",
+        demo: true
+    }
+];
+
+function createId() {
+    return "work-" + Date.now() + "-" + Math.random().toString(36).slice(2, 8);
+}
+
+function loadWorks() {
+    try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+
+        if (saved !== null) {
+            const parsed = JSON.parse(saved);
+
+            if (Array.isArray(parsed)) {
+                works = parsed.filter(item =>
+                    item &&
+                    typeof item.id === "string" &&
+                    typeof item.title === "string" &&
+                    typeof item.category === "string" &&
+                    typeof item.image === "string"
+                );
+                return;
+            }
+        }
+    } catch (error) {
+        console.error("No se pudo cargar el portafolio:", error);
+    }
+
+    works = [...initialWorks];
+}
+
+function saveWorks() {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(works));
+        return true;
+    } catch (error) {
+        console.error("No se pudo guardar el portafolio:", error);
+        alert(
+            "No se pudo guardar el trabajo. La imagen puede ser demasiado grande " +
+            "o el navegador puede haberse quedado sin espacio. Prueba con una imagen más pequeña."
+        );
+        return false;
+    }
+}
+
+function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    })[char]);
+}
+
+function renderGallery() {
+    const query = searchInput.value.trim().toLocaleLowerCase("es");
+
+    const visibleWorks = works.filter(work => {
+        const matchesCategory =
+            activeFilter === "Todos" || work.category === activeFilter;
+
+        const searchable = (
+            work.title + " " +
+            work.category + " " +
+            (work.description || "")
+        ).toLocaleLowerCase("es");
+
+        return matchesCategory && searchable.includes(query);
+    });
+
+    workCount.textContent = works.length;
+
+    document.querySelectorAll(".filter-btn").forEach(button => {
+        const selected = button.dataset.filter === activeFilter;
+        button.classList.toggle("active", selected);
+        button.setAttribute("aria-pressed", String(selected));
+    });
+
+    if (visibleWorks.length === 0) {
+        gallery.innerHTML = `
+            <div class="empty-state">
+                <div class="empty-icon">✳</div>
+                <h3>NO HAY TRABAJOS AQUÍ TODAVÍA.</h3>
+                <p>Prueba otra categoría o agrega un nuevo diseño a la colección.</p>
+            </div>
+        `;
+        return;
+    }
+
+    gallery.innerHTML = visibleWorks.map((work, index) => `
+        <article class="work-card">
+            <div
+                class="work-image"
+                data-action="view"
+                data-id="${escapeHTML(work.id)}"
+                tabindex="0"
+                role="button"
+                aria-label="Ver ${escapeHTML(work.title)} en grande"
+            >
+                <img
+                    src="${escapeHTML(work.image)}"
+                    alt="${escapeHTML(work.title)}"
+                    loading="lazy"
+                >
+                <span class="work-number">${String(index + 1).padStart(2, "0")}</span>
+                <span class="work-category">${escapeHTML(work.category)}</span>
+            </div>
+
+            <div class="work-info">
+                <h3>${escapeHTML(work.title)}</h3>
+                <p>${escapeHTML(work.description || "Una pieza de Tattoo Chucky House.")}</p>
+
+                <div class="work-footer">
+                    <span>${work.demo ? "EJEMPLO VISUAL" : "CHUCKY HOUSE ORIGINAL"}</span>
+
+                    <div class="work-actions">
+                        <button
+                            class="small-action"
+                            type="button"
+                            data-action="edit"
+                            data-id="${escapeHTML(work.id)}"
+                            aria-label="Editar ${escapeHTML(work.title)}"
+                            title="Editar"
+                        >✎</button>
+
+                        <button
+                            class="small-action delete"
+                            type="button"
+                            data-action="delete"
+                            data-id="${escapeHTML(work.id)}"
+                            aria-label="Eliminar ${escapeHTML(work.title)}"
+                            title="Eliminar"
+                        >×</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    `).join("");
+}
+
+function openForm() {
+    editingId = null;
+    selectedImage = "";
+    workForm.reset();
+    imagePreview.src = "";
+    imagePreview.classList.remove("visible");
+    imageInput.required = true;
+    saveButton.textContent = "GUARDAR TRABAJO ↗";
+    document.getElementById("formTitle").innerHTML = 'NUEVO <span>TRABAJO.</span>';
+    formModal.classList.add("open");
+    document.body.style.overflow = "hidden";
+    document.getElementById("workTitle").focus();
+}
+
+function closeForm() {
+    formModal.classList.remove("open");
+    document.body.style.overflow = "";
+    workForm.reset();
+    imagePreview.src = "";
+    imagePreview.classList.remove("visible");
+    selectedImage = "";
+    editingId = null;
+    imageInput.required = true;
+}
+
+function editWork(id) {
+    const work = works.find(item => item.id === id);
+    if (!work) return;
+
+    editingId = id;
+    selectedImage = work.image;
+
+    workForm.reset();
+    document.getElementById("workTitle").value = work.title;
+    document.getElementById("workCategory").value = work.category;
+    document.getElementById("workDescription").value = work.description || "";
+
+    imagePreview.src = work.image;
+    imagePreview.classList.add("visible");
+
+    imageInput.required = false;
+    saveButton.textContent = "GUARDAR CAMBIOS ↗";
+    document.getElementById("formTitle").innerHTML = 'EDITAR <span>TRABAJO.</span>';
+
+    formModal.classList.add("open");
+    document.body.style.overflow = "hidden";
+}
+
+function deleteWork(id) {
+    const work = works.find(item => item.id === id);
+    if (!work) return;
+
+    if (!confirm(`¿Quieres eliminar "${work.title}" del portafolio?`)) return;
+
+    const previousWorks = works;
+    works = works.filter(item => item.id !== id);
+
+    if (!saveWorks()) {
+        works = previousWorks;
+        return;
+    }
+
+    renderGallery();
+}
+
+function openViewer(id) {
+    const work = works.find(item => item.id === id);
+    if (!work) return;
+
+    document.getElementById("viewerImage").src = work.image;
+    document.getElementById("viewerImage").alt = work.title;
+    document.getElementById("viewerTitle").textContent = work.title;
+    document.getElementById("viewerDescription").textContent =
+        work.category + (work.description ? " — " + work.description : "");
+
+    document.getElementById("viewer").classList.add("open");
+    document.body.style.overflow = "hidden";
+}
+
+function closeViewer() {
+    document.getElementById("viewer").classList.remove("open");
+    document.body.style.overflow = "";
+}
+
+document.getElementById("openForm").addEventListener("click", openForm);
+document.getElementById("closeForm").addEventListener("click", closeForm);
+document.getElementById("cancelForm").addEventListener("click", closeForm);
+
+formModal.addEventListener("click", event => {
+    if (event.target === formModal) closeForm();
+});
+
+document.getElementById("closeViewer").addEventListener("click", closeViewer);
+
+document.getElementById("viewer").addEventListener("click", event => {
+    if (event.target.id === "viewer") closeViewer();
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        closeForm();
+        closeViewer();
+    }
+});
+
+document.getElementById("filters").addEventListener("click", event => {
+    const button = event.target.closest("[data-filter]");
+    if (!button) return;
+
+    activeFilter = button.dataset.filter;
+    renderGallery();
+});
+
+searchInput.addEventListener("input", renderGallery);
+
+gallery.addEventListener("click", event => {
+    const button = event.target.closest("[data-action]");
+    if (!button) return;
+
+    const { action, id } = button.dataset;
+
+    if (action === "view") openViewer(id);
+    if (action === "edit") editWork(id);
+    if (action === "delete") deleteWork(id);
+});
+
+gallery.addEventListener("keydown", event => {
+    if (
+        (event.key === "Enter" || event.key === " ") &&
+        event.target.matches('[data-action="view"]')
+    ) {
+        event.preventDefault();
+        openViewer(event.target.dataset.id);
+    }
+});
+
+imageInput.addEventListener("change", () => {
+    const file = imageInput.files[0];
+
+    if (!file) return;
+
+    const allowedTypes = ["image/jpeg", "image/png", "image/webp"];
+
+    if (!allowedTypes.includes(file.type)) {
+        alert("Selecciona una imagen JPG, PNG o WebP.");
+        imageInput.value = "";
+        return;
+    }
+
+    if (file.size > 8 * 1024 * 1024) {
+        alert("La imagen supera los 8 MB. Selecciona una imagen más pequeña.");
+        imageInput.value = "";
+        return;
+    }
+
+    const reader = new FileReader();
+    const readId = ++pendingFileRead;
+
+    reader.onload = () => {
+        if (readId !== pendingFileRead) return;
+
+        selectedImage = reader.result;
+        imagePreview.src = selectedImage;
+        imagePreview.classList.add("visible");
+    };
+
+    reader.onerror = () => {
+        if (readId !== pendingFileRead) return;
+        alert("No se pudo leer la imagen. Inténtalo de nuevo.");
+    };
+
+    reader.readAsDataURL(file);
+});
+
+workForm.addEventListener("submit", event => {
+    event.preventDefault();
+
+    const title = document.getElementById("workTitle").value.trim();
+    const category = document.getElementById("workCategory").value;
+    const description = document.getElementById("workDescription").value.trim();
+
+    if (!title) {
+        alert("Escribe el nombre del tatuaje.");
+        return;
+    }
+
+    if (!selectedImage) {
+        alert("Selecciona una fotografía.");
+        return;
+    }
+
+    const allowedCategories = ["Blackwork", "Anime", "Realismo", "Lettering", "Otros"];
+
+    if (!allowedCategories.includes(category)) {
+        alert("Selecciona un estilo válido.");
+        return;
+    }
+
+    const previousWorks = [...works];
+
+    if (editingId) {
+        works = works.map(work => work.id === editingId ? {
+            ...work,
+            title,
+            category,
+            description,
+            image: selectedImage,
+            demo: false
+        } : work);
+    } else {
+        works.unshift({
+            id: createId(),
+            title,
+            category,
+            description,
+            image: selectedImage,
+            demo: false
+        });
+    }
+
+    if (!saveWorks()) {
+        works = previousWorks;
+        return;
+    }
+
+    activeFilter = "Todos";
+    searchInput.value = "";
+    renderGallery();
+    closeForm();
+});
+
+loadWorks();
+renderGallery();
+</script>
+
+</body>
+</html>
